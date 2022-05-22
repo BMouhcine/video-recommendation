@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "62cddff4-0c61-4901-8f51-fc7ccf6e90c1",
+		"name": "Spideo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9281204"
+	},
+	"item": [
+		{
+			"name": "AddVideo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"videoId-200200200\",\r\n    \"titre\": \"dummy-titre-test\",\r\n    \"labels\": [\r\n        \"label0\",\r\n        \"label1\",\r\n        \"label2\",\r\n        \"label6\",\r\n        \"label5\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/video/addVideo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"addVideo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddFilm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"videoId-200200201\",\r\n    \"titre\": \"dummy-titre-film\",\r\n    \"director\": \"film director Y\",\r\n    \"release_date\": \"1982-03-18T12:00:00Z\",\r\n    \"labels\": [\r\n        \"label0\",\r\n        \"label1\",\r\n        \"label2\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/video/addFilm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"addFilm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSerie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"videoId-200200202\",\r\n    \"titre\": \"dummy-titre-serie\",\r\n    \"number_of_episodes\": 22,\r\n    \"labels\": [\r\n        \"label3\",\r\n        \"label4\",\r\n        \"label5\"\r\n    ]\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/video/addSerie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"addSerie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVideoById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/video/getVideo?id=videoId-200200201",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"getVideo"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "videoId-200200201"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVideosByTitre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/video/getVideos?titre=dum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"getVideos"
+					],
+					"query": [
+						{
+							"key": "titre",
+							"value": "dum"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteVideo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"videoId-200200202\",\r\n    \"titre\": \"dummy-titre-serie\",\r\n    \"labels\": [\r\n        \"label3\",\r\n        \"label4\",\r\n        \"label5\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/video/deleteVideo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"deleteVideo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDeletedVideos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/video/getDeletedVideos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"getDeletedVideos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFilms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/video/getFilms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"getFilms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSeries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/video/getSeries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"getSeries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addInvalidFilm",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"videoId-200200204\",\r\n    \"titre\": \"dummy-titre-film-without-director-field\",\r\n    \"director\": \"\",\r\n    \"release_date\": \"1982-03-18T12:00:00Z\",\r\n    \"labels\": [\r\n        \"label3\",\r\n        \"label4\",\r\n        \"label5\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/video/addFilm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"addFilm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addInvalidSerie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"videoId-200200205\",\r\n    \"titre\": \"dummy-test-serie-without-number-of-episodes\",\r\n    \"number_of_episodes\": \"\",\r\n    \"labels\": [\r\n        \"label0\",\r\n        \"label00\",\r\n        \"label000\"\r\n    ]\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/video/addSerie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"addSerie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSimilarVideos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"videoId-200200201\",\r\n    \"titre\": \"dummy-test-film\",\r\n    \"labels\": [\r\n        \"label0\",\r\n        \"label1\",\r\n        \"label2\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/video/getSimilarVideos?minMatchNumber=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"video",
+						"getSimilarVideos"
+					],
+					"query": [
+						{
+							"key": "minMatchNumber",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
