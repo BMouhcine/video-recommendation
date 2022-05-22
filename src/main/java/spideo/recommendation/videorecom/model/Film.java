@@ -7,7 +7,6 @@ import java.util.Date;
 
 @Entity
 @Table(name = "film")
-@PrimaryKeyJoinColumn(name = "video")
 public class Film extends Video {
 
     @JsonProperty("release_date")
