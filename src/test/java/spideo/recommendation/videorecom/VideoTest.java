@@ -26,7 +26,7 @@ import java.util.Collections;
 import java.util.Date;
 
 @WebMvcTest(Controller.class)
-class AddVideoTest {
+class VideoTest {
 
     @Autowired
     private MockMvc mockMvc;
