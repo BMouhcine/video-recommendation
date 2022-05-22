@@ -2,6 +2,7 @@
 
 Ce projet est déployé sur le Cloud, et en particulier Heroku pour plus de simplicité.  
 Ci-après le lien de récupération des Films (par exemple) de l'API deployée: https://video-recommendation-spideo.herokuapp.com/api/video/getFilms  
+------
 :warning: Il est recommandé d'exécuter le projet en local: Quand l'application déployée n'est pas souvent utilisée (timeout), Heroku met l'instance en mode "hibernate". Donc après ce timeout, et quand l'instance/l'app est en mode "hibernate", en accédant au lien ci-dessus, le résultat de retour va être probablement lent (pendant que Heroku essaye de redémarrer l'application).
 ------
 Pour exécuter ce projet en local, il faut:
