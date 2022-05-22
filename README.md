@@ -30,7 +30,7 @@ Pour exécuter ce projet, il faut:
 ------
 
 ### Autres endpoints et exemples: 
-> Pour pouvoir tester l'api rapidement, à la racine du dossier, il y a un fichier ***JSON*** qui représente la collection Postman Ready-to-go que j'ai exporté. Il suffit d'ouvrir Postman et importer la collection et lancer toutes les endpoints pour tester les endpoints de l'api.
+> Pour pouvoir tester l'api rapidement, à la racine du dossier, il y a un fichier ***JSON*** `[Spideo.postman_collection.json]` qui représente la collection Postman Ready-to-go que j'ai exporté. Il suffit d'ouvrir Postman et importer la collection et lancer toutes les endpoints pour tester les endpoints de l'api.
 ------
 Sinon, pour plus de détails, ci-dessous le guide: 
 * Pour ajouter un Film, HTTP/POST à `http://localhost:8080/api/video/addFilm` avec un body de contenu suivant: 
