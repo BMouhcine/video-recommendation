@@ -1,7 +1,7 @@
 # video-recommendation -- GUIDE:  
 
 Ce projet est déployé sur le Cloud, et en particulier Heroku pour plus de simplicité.  
-Ci-après le lien de récupération des Films (par exemple) de l'API deployée: https://video-recommendation-spideo.herokuapp.com/api/video/getFilms  
+Ci-après le lien de récupération des Films (par exemple) de l'API deployée: [https://video-recommendation-spideo.herokuapp.com/api/video/getFilms](https://video-recommendation-test.herokuapp.com/api/video/getFilms)  
 
 ------
 
